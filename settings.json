@@ -60,32 +60,42 @@
   "buffer_font_size": 13.0,
   "theme": "Wired Theme",
   "theme_overrides": {
-      "Wired Theme": {
-        "accents": [
-          "#000000",
-          "#ca988e",
-          "#d2738a",
-          "#d78594",
-          "#a47f7c",
-          "#a45a74"
-        ],
-        "element.hover": "#703A47FF",
-        "ghost_element.background": "#E3DADC00",
-        "ghost_element.hover": "#703A47FF",
-        "icon": "#F0D8B0FF",
-        "icon.muted": "#B39987FF",
-        "status_bar.background": "#000000",
-        "tab.inactive_background": "#000000FF",
-        "text": "#F0D8B0FF",
-        "text.muted": "#B39987FF",
-        "syntax": {
-          "keyword": {
-            "color": "#FF5C8AFF"
-          },
-          "property": {
-            "color": "#C1B492FF"
-          }
+    "Wired Theme": {
+      "accents": [
+        "#000000",
+        "#ca988e",
+        "#d2738a",
+        "#d78594",
+        "#a47f7c",
+        "#a45a74"
+      ],
+      "editor.active_line.background": "#D2738A0F",
+      "element.hover": "#703A47FF",
+      "ghost_element.background": "#E3DADC00",
+      "ghost_element.hover": "#703A47FF",
+      "icon": "#F0D8B0FF",
+      "icon.muted": "#B39987FF",
+      "status_bar.background": "#000000",
+      "tab.inactive_background": "#000000FF",
+      "text": "#F0D8B0FF",
+      "text.muted": "#B39987FF",
+      "syntax": {
+        "keyword": {
+          "color": "#FF5C8AFF"
+        },
+        "property": {
+          "color": "#C1B492FF"
+        },
+        "type": {
+          "color": "#B39987FF"
+        },
+        "variable.parameter": {
+          "color": "#F0D8B0FF"
+        },
+        "variable": {
+          "color": "#E0AFC0FF"
         }
       }
     }
+  }
 }
