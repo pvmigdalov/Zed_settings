@@ -7,12 +7,36 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 100.0,
+  "languages": {
+    "Python": {
+      "format_on_save": "on",
+      "formatter":"language_server",
+      "language_servers": [
+        // Enable ty and ruff,
+        // Other built-in servers (basedpyright, pyright, pylsp)
+        // are disabled by being omitted from this list.
+        "ty",
+        "ruff"
+      ]
+    }
+  },
+  "diff_view_style": "unified",
+  "proxy": "",
+  "use_system_prompts": true,
+  "use_system_path_prompts": true,
+  "auto_update_extensions": {
+    "catppuccin-blur": false
+  },
+  "buffer_font_family": "DejaVu Sans Mono",
   "ui_font_weight": 500.0,
   "ui_font_family": ".ZedSans",
   "agent_buffer_font_size": 13.0,
   "agent_ui_font_size": 15.0,
-  "icon_theme": "Soft Charmed Icons",
+  "icon_theme": "Catppuccin Latte",
   "terminal": {
+    "font_weight": 400.0,
     "font_size": 13.0
   },
   "project_panel": {
@@ -34,9 +58,34 @@
   },
   "ui_font_size": 15.0,
   "buffer_font_size": 13.0,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Carbonfox - blurred"
-  }
+  "theme": "Wired Theme",
+  "theme_overrides": {
+      "Wired Theme": {
+        "accents": [
+          "#000000",
+          "#ca988e",
+          "#d2738a",
+          "#d78594",
+          "#a47f7c",
+          "#a45a74"
+        ],
+        "element.hover": "#703A47FF",
+        "ghost_element.background": "#E3DADC00",
+        "ghost_element.hover": "#703A47FF",
+        "icon": "#F0D8B0FF",
+        "icon.muted": "#B39987FF",
+        "status_bar.background": "#000000",
+        "tab.inactive_background": "#000000FF",
+        "text": "#F0D8B0FF",
+        "text.muted": "#B39987FF",
+        "syntax": {
+          "keyword": {
+            "color": "#FF5C8AFF"
+          },
+          "property": {
+            "color": "#C1B492FF"
+          }
+        }
+      }
+    }
 }
